@@ -3,11 +3,12 @@
     margin: 4px;;
     padding: 0px;;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    background-color: #fdcc04;
 }
 
 nav {
     height:80px;
-    background: white;
+    background:#fdcc04;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,12 +30,60 @@ nav a{
 }
 
 .hero{
-    background: white;
+    background: #fdcc04;
 }
 
 .container {
     display:grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 1fr;
     height:95vh;
     padding:3rem calc((100vw-1300px) / 2);
+}
+
+.column-left{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    padding: 0rem 2rem;
+}
+
+.column-left h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.column-right {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color:#fdcc04;
+    background: black;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+button:hover {
+    background:white;
+    color:black;
+}
+
+.column-right{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+@media screen and (max-width:760px) {
+    .hero-container {
+        grid-template-columns: :1fr;
+    }
 }
