@@ -1,43 +1,35 @@
-* {
-    box-sizing: border-box;
-    margin: 4px;;
+*{
     padding: 0px;;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    background-color: #fdcc04;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: beige;
 }
 
-nav {
+nav{
     height:80px;
-    background:#fdcc04;
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
-    padding:0rem calc((100vw-1300px) / 2);
+    padding:0 2rem;
 }
 
-.logo {
-    color: black;
-    font: size 12px;
+.logo{
+    color:brown;
+    font-size: 1.5rem;
     font-weight: bold;
-    font-style: italic
-    padding: 0 2rem;
+    font-style: italic;
 }
 
 nav a{
     text-decoration: none;
-    color:black;
-    padding: 0 1.5rem;
+    color:maroon;
 }
 
-.hero{
-    background: #fdcc04;
-}
-
-.container {
+.container{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    height:95vh;
-    padding:3rem calc((100vw-1300px) / 2);
+    padding:0 2rem;
 }
 
 .column-left{
@@ -45,8 +37,8 @@ nav a{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: black;
-    padding: 0rem 2rem;
+    color: maroon;
+    padding:0 2rem;
 }
 
 .column-left h1{
@@ -54,36 +46,22 @@ nav a{
     font-size: 3rem;
 }
 
-.column-right {
+.column-left p{
     margin-bottom: 2rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
+    font-size: 5rem;
 }
 
-button {
-    padding: 1rem 3rem;
+button{
+    padding:1rem 3rem;
     font-size: 1rem;
     border: none;
-    color:#fdcc04;
-    background: black;
+    color:bisque;
+    background: maroon;
     cursor: pointer;
     border-radius: 50px;
 }
 
-button:hover {
-    background:white;
-    color:black;
-}
-
-.column-right{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem 2rem;
-}
-
-@media screen and (max-width:760px) {
-    .hero-container {
-        grid-template-columns: :1fr;
-    }
+button:hover{
+    background:rgb(197, 163, 122);
+    color:maroon
 }
